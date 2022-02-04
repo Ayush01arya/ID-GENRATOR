@@ -112,7 +112,7 @@ if st.button("CREATE"):
     #a=st.write(f'{name}.png')
     #imgh=Image.open(f'{name}.png')
     #st.image(imgh,width=200)
-    image = Image.open(f'{name}.png')
+    image = Image.open(f'{idno}.png')
     col1, col2 = st.columns([0.1, 0.2])
     with col1:
         st.markdown("""<style> font{font-size:5px; font-family:'Cooper Black';color:#FF9633;<style><p>Result</p>""",
