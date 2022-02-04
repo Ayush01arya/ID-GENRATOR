@@ -2,6 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 image = Image.new('RGB', (1000, 900), (255, 255, 255))
 draw = ImageDraw.Draw(image)
+#font = ImageFont.truetype('arial.tff',size=45)
 import random
 import os
 import datetime
@@ -44,8 +45,8 @@ if st.button("CREATE"):
 
     company = message
     color = 'rgb(0, 0, 0)'
-    #font = ImageFont.truetype('arial.ttf', size=80)
-    draw.text((x, y), message, fill=color)
+    font = ImageFont.truetype('arial.ttf', size=80)
+    draw.text((x, y), message, fill=color,font=font)
 
     # adding an unique id number. You can manually take it from user
     (x, y) = (600, 75)
