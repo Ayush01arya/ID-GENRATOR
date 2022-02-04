@@ -45,7 +45,7 @@ if st.button("CREATE"):
 
     company = message
     color = 'rgb(0, 0, 0)'
-    font = ImageFont.truetype('arial.ttf', size=80)
+    #font = ImageFont.truetype('arial.ttf', size=80)
     draw.text((x, y), message, fill=color,font=font)
 
     # adding an unique id number. You can manually take it from user
