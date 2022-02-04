@@ -45,7 +45,7 @@ if st.button("CREATE"):
 
     company = message
     color = 'rgb(0, 0, 0)'
-    #font = ImageFont.truetype(size=80)
+    font = ImageFont.truetype('arial.ttf', size=80)
     draw.text((x, y), message, fill=color,font=font)
 
     # adding an unique id number. You can manually take it from user
@@ -119,6 +119,7 @@ if st.button("CREATE"):
                     unsafe_allow_html=True)
     with col2:
         st.image(image, width=250)
+    print(message,message2,message3,message4,message4,message5,message6,message7,message8)
     # print(('\n\n\nYour ID Card Successfully created in a PNG file ' + name + '.png'))
 
 # save the edited image
