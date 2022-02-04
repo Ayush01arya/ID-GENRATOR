@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 image = Image.new('RGB', (1000, 900), (255, 255, 255))
 draw = ImageDraw.Draw(image)
-font = ImageFont.truetype('arial.ttf', size=45)
+
 import random
 import os
 import datetime
