@@ -39,7 +39,7 @@ if st.button("CREATE"):
     lt=st.empty()
     bar=st.progress(0)
     for iw in range(100):
-        lt.text(f'CREATING ...  {iw+1}')
+        lt.text(f'CREATING ...  {iw+1} %')
         bar.progress(iw+1)
         time.sleep(0.1)
 
